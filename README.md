@@ -146,3 +146,4 @@ assert id1 == id2
 ## TODO: 
 
   * [ ] Test clean up logic.
+  * [ ] Improve docs for lambda logic.
