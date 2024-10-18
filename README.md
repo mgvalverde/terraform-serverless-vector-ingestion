@@ -147,3 +147,4 @@ assert id1 == id2
 
   * [ ] Test clean up logic.
   * [ ] Improve docs for lambda logic.
+  * [ ] Remove layer creation code, which is not currently being used.
