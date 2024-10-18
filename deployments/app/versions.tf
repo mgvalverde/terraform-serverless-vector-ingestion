@@ -5,12 +5,14 @@ terraform {
       source = "hashicorp/aws"
     }
   }
-  backend "s3" {
-    ## State Store
-    ## Lock Store
-    # DynamoDB table name: LOCKS. NOTE: Id = LockID
-    encrypt        = true
-  }
+  ## UNCOMMENT THIS SECTION IF YOU PLAN TO STORE YOUR TFSTATE IN S3
+  ## AND YOUR LOCK IN DYNAMO DB
+  # backend "s3" {
+  #   ## State Store
+  #   ## Lock Store
+  #   # DynamoDB table name: LOCKS. NOTE: Id = LockID
+  #   encrypt        = true
+  # }
 }
 
 provider "aws" {
